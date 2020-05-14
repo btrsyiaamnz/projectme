@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+		background: beige;
+		}
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+#center{
+	text-align: center;
+}
+.right {
+  float: right;}
+/* Header/logo Title */
+.header {
+  padding: 50px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+.monospace 
+{font-family: "Lucida Console", Courier, monospace;}
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color:beige;
+  color: black;
+  padding: 20px;
+}
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: black;
+  color: beige;
+  width: 100%;
+  padding: 20px;
+}
+/* Main column */
+.main {   
+  -ms-flex: 60%; /* IE10 */
+  flex: 60%;
+  background-color: beige;
+  padding: 20px;
+    color: black;
+}
+video {
+  width: 50%;
+  height: auto;
+
+}
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: beige;
+  color: white;
+}
+.footertable {
+  width: 60%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: black;
+}
+/* Footer */
+.footerpic {
+  width: 70%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: pink;
+  color: white;
+}
+/* Footer */
+.footerr {
+  width: 50%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: black;
+  color: white;
+}
+</style> 
+</head>
+<body>
+<div class="header">
+  <h1>B A L Q I S - B A T R I S Y I A</h1>
+  <P> Get to know me</p>
+</div>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="education.html">Education</a>
+  <a href="fav.html">Favorite</a>
+    <a href="feedback.html" class="right">Feedback</a>
+  <a href="contact.html" class="right">Contact</a>
+</div>
+<div class="row">
+  <div class="side">
+	<div id="center">
+		<h2>ABOUT ME</h2>
+    <img src="./image/wall.jpg" alt="wall" width="250px" height="250px"/>
+	</div>
+	<p>Name:</p>
+    <div class="fakeimg" style="height:60px;">Balqis Batrisyia Binti Mohd Nizam</div>
+	<p>Home Address:</p>
+    <div class="fakeimg" style="height:60px;">Melor, Kelantan </div>
+	<p>Hobby:</p>
+    <div class="fakeimg" style="height:60px;">food hunting</div>
+	<p>Ambition: </p>
+    <div class="fakeimg" style="height:60px;">to be a better person</div>
+	<p>Thing i like the most:</p>
+    <div class="fakeimg" style="height:60px;">random act of kindness</div>
+	<p>Thing i hate the most:</p>
+    <div class="fakeimg" style="height:60px;">gaining weight</div>
+	<br>
+	
+</div>
+
+<div class="main">
+<br>
+<br>
+	<div id="center">
+	
+	<button onclick="myFunction()">Press here!</button>
+	<p id="demo"></p>
+
+	<script>
+	function myFunction() {
+	var txt;
+	if (confirm("Welcome to my webpage!")) {
+		txt = "You pressed OK!";
+		} else {
+		txt = "You pressed Cancel!";
+	}
+	document.getElementById("demo").innerHTML = txt;
+	}
+	</script>
+	<br>
+
+  <video id="myVideo"  width="400" controls>
+
+      <source src="./image/genting.mp4" type="video/mp4">
+      <source src="./image/genting.ogg" type="video/ogg">
+      Your browser does not support HTML5 video.
+    </video>
+	<br>
+	<button onclick="playVid()" type="button">Play</button>
+	<button onclick="pauseVid()" type="button">Pause</button><br> 
+  <script> 
+var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script>
+ 
+ <br>
+	<p><i> My father is Mohd Nizam and my mother is Al Luk Luk. I have one younger sister and 2 younger brother. Apart from my student life, 
+	I am very kind and cooperative daughter of my parents. 
+	I like to sleep early and get up late when i was at home during holidays
+	Currenctly, I am studying at <b>UiTM Kuala Terengganu</b> that located at Chendering near the Istana Syarqiyyah
+	I wish that i would be a person that can contribute to the society and have the ability to help the people in need especially those who inland.
+	I want to do something good for my community and my country men. I mean life to be great gift for some special purpose by God. Therefore, I value time in my life and strive hard to serve my country and my community</i>.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="footerpic"> 
+    <img src="./image/me1.jpg" style="width:20%">
+    <img src="./image/me2.jpg" style="width:20%">
+    <img src="./image/me3.jpg" style="width:20%">
+    <img src="./image/me4.jpg" style="width:20%">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ </div>
+ <br>
+ <br>
+ <br>
+
+</div>
+<div class="footer"> 
+<br>
+<div class="footerr"> 
+<h2 color="black"> My Skincare Routine</h2>
+</div>
+<br>
+
+    <img src="./image/skin1.jpg" style="width:30%">
+	<br>
+	<br>
+    <img src="./image/skin2.jpg" style="width:30%">
+	<br>
+	<br>
+    <img src="./image/skin3.jpg" style="width:30%">
+	<br>
+	<br>
+	<div class="footerr"> 
+<h2 color="black"> Best Morning Routine Recipe</h2>
+</div>
+<br>
+
+    <img src="./image/r1.jpg" style="width:30%">
+	<br>
+	<br>
+    <img src="./image/r2.jpg" style="width:30%">
+	<br>
+	<br>
+    <img src="./image/r3.jpg" style="width:30%">
+	<br>
+    <br>
+	
+<div class="footerr"> 
+<h2>Make Up Step</h2>
+</div>
+<br>
+<br>
+<div class="footertable"> 
+<div class="w3-container">
+
+  <table class="w3-table w3-bordered" >
+    <tr>
+      <th>Step</th>
+      <th>Product</th>
+    </tr>
+    <tr>
+      <td>Face Cleanser</td>
+      <td>Fresh Rose</td>
+    </tr>
+    <tr>
+      <td>Face Scrub</td>
+      <td>Mario Badescu</td>
+    </tr>
+   <tr>
+      <td>Moisturizer</td>
+      <td>Muji</td>
+    </tr>
+       <tr>
+      <td>Primer</td>
+      <td>MAC Cosmetic</td>
+    </tr>
+       <tr>
+      <td>Concealer</td>
+      <td>Maybelline</td>
+    </tr>
+       <tr>
+      <td>Foundation</td>
+      <td>Cyber Color</td>
+    </tr>
+       <tr>
+      <td>Bronzer</td>
+      <td>The Balm</td>
+    </tr>
+       <tr>
+      <td>Eyebrows</td>
+      <td>Anatasia Beverly Hills</td>
+    </tr>
+      <tr>
+      <td>Eye Shadow</td>
+      <td>Huda Beauty</td>
+    </tr>
+    <tr>
+      <td>Eyeliner</td>
+      <td>Maybelline</td>
+    </tr>
+     <tr>
+      <td>Mascara</td>
+      <td>Peripera</td>
+    </tr>
+    <tr>
+      <td>Lipliner</td>
+      <td>The Body Shop</td>
+    </tr>
+    <tr>
+      <td>Lipstick</td>
+      <td>Huda Beauty</td>
+    </tr>
+  </table>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div class="right">
+<script>
+function printPage() {
+  window.print();
+}
+</script>
+
+<input type="button" value="Print this page" onclick="printPage()" />
+</div>
+</body>
+</head>

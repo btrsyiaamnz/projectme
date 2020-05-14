@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+		background: beige;
+		}
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+#center{
+	text-align: center;
+}
+/* Header/logo Title */
+.header {
+  padding: 50px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+.monospace 
+{font-family: "Lucida Console", Courier, monospace;}
+table, td, th {  
+  border: 0px solid #ddd;
+  text-align: center;
+}
+/* C O L U M N */
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  color: black;
+  background-color: black;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    color: white;
+}
+.footer {
+  width: 60%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: black;
+  color: white;
+}
+.footerws {
+  width: 40%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: black;
+  color: white;
+}
+.columnmail {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+  color: black;
+  background-color: black;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    color: white;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.right {
+  float: right;}
+</style> 
+</head>
+<body>
+<div class="header">
+  <h1>B A L Q I S - B A T R I S Y I A</h1>
+  <P> Get to know me</p>
+</div>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="education.html">Education</a>
+  <a href="fav.html">Favorite</a>
+    <a href="feedback.html" class="right">Feedback</a>
+  <a href="contact.html" class="right">Contact</a>
+</div>
+<br>
+<div id="center">
+<audio id="mysong3" controls>
+  <source src="./image/everytime.ogg" type="audio/ogg">
+  <source src="./image/everytime.mp3" type="audio/mpeg">
+</audio>
+<br>
+<button onclick="playVid()" type="button">Play</button>
+<button onclick="pauseVid()" type="button">Pause</button><br> 
+  <script> 
+var vid = document.getElementById("mysong3"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script>
+<br>
+<br>
+
+<br>
+<div class="footer"> 
+<h3 style="font-family:courier;"> M Y - S O C I A L - M E D I A</h3>
+<div class="row">
+  <div class="column" style="background-color:black;">
+    <img src="./image/snap.jpg" style="width:70%">
+  <p><i>Late night. Deep thoughts. Good music.</i></p>
+  <p><i>Add me on snapchat!</i></p>
+  <p><i>@btrsyiaamnz</i></p>
+  </div>
+  <div class="column" style="background-color:black;">
+    <img src="./image/fb.jpg" style="width:70%">
+  <p><i>Stay connected with relative...</i></p>
+  <p><i>Add me on Facebook!</i></p>
+  <a href='https://www.facebook.com/bbatrisyia76' target="_blank">Click Here!</a>
+  </div>
+  <div class="column" style="background-color:black;">
+    <img src="./image/tw.jpg" style="width:70%">
+	  <p><i>A place where everyone can be themselves</i></p>
+	 <p><i>Follow me on Twitter!</i></p>
+  <a href='https://twitter.com/batttrsyia' target="_blank">Click Here!</a>
+
+  </div>
+  <div class="column" style="background-color:black; ">
+    <img src="./image/ig.jpg" style="width:70%">
+    <p><i>The best way to cheer yourself up</i></p>
+	<p><i>Follow me on Instagram!</i></p>
+	<a href='https://www.instagram.com/batttrsyia/?hl=en' target="_blank">Click Here!</a>
+	
+  </div>  
+</div>
+</div>
+</div>
+<br>
+<br>
+<div class="footerws"> 
+<h3 style="font-family:courier;"> W H A T S A P P</h3>
+<div class="row">
+
+  <div class="columnmail" style="background-color:black;">
+
+    <img src="./image/ws.jpg" style="width:50%">
+  </div>
+  <div class="columnmail" style="background-color:black;">
+	  <p><i>Anything just Whatsapp me!</i></p>
+	 <p><i>For urgent matters, please call.</i></p>
+	<p><i> +60199378251</i></p>
+  </div>
+  
+</div>
+</div>
+</div>
+<br>
+<br>
+<div class="footerws"> 
+<h3 style="font-family:courier;"> E M A I L </h3>
+<div class="row">
+  <div class="columnmail" style="background-color:black;">
+    <img src="./image/mail.jpg" style="width:50%">
+  </div>
+  <div class="columnmail" style="background-color:black;">
+	  <p><i>For business matters, do email me.</i></p>
+	 <p><i>btrsyiaamnz@gmail.com</i></p>
+  </div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div class="footerws"> 
+<h3 style="font-family:courier;"> L I N K E D I N </h3>
+<div class="row">
+  <div class="columnmail" style="background-color:black;">
+    <img src="./image/linked.jpg" style="width:50%">
+  </div>
+  <div class="columnmail" style="background-color:black;">
+	  <p><i>My professional social networking platform,</i></p>
+	 <a href='https://www.linkedin.com/in/balqis-batrisyia-9409981a9/' target="_blank">Click Here!</a>
+	<p><i> </i></p>
+  </div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div id="center">
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click here to see current Date and Time.</button>
+<p id="demo"></p>
+</div>
+<br>
+<br>
+<br>
+<div class="right">
+<script>
+function printPage() {
+  window.print();
+}
+</script>
+
+<input type="button" value="Print this page" onclick="printPage()" />
+</div>
+<br>
+<br>
+<br>
+<br>
+</body>
+</head>

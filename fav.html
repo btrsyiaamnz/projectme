@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Favorite</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+		background: beige;
+		}
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+#center{
+	text-align: center;
+}
+/* Header/logo Title */
+.header {
+  padding: 50px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+.monospace 
+{font-family: "Lucida Console", Courier, monospace;}
+
+/* C O L U M N */
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  color: black;
+  background-color: black;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer {
+  width: 60%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: black;
+  color: white;
+}
+.footertable {
+  width: 60%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: black;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style> 
+</head>
+<body>
+<div class="header">
+  <h1>B A L Q I S - B A T R I S Y I A</h1>
+  <P> Get to know me</p>
+</div>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="education.html">Education</a>
+  <a href="fav.html">Favorite</a>
+  <a href="feedback.html" class="right">Feedback</a>
+  <a href="contact.html" class="right">Contact</a>
+</div>
+<br>
+<div id="center">
+<audio id="mysong2" controls>
+  <source src="./image/hours.ogg" type="audio/ogg">
+  <source src="./image/hours.mp3" type="audio/mpeg">
+</audio>
+<br>
+<button onclick="playVid()" type="button">Play</button>
+<button onclick="pauseVid()" type="button">Pause</button><br> 
+  <script> 
+var vid = document.getElementById("mysong2"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script>
+<br>
+<div class="footer">
+<h3 style="font-family:courier;"> My favorite food....</h3>
+<div class="row">
+  <div class="column" style="background-color:white;">
+	<br>
+    <img src="./image/e1.jpg" style="width:70%">
+  <p><i>life without sushi is nothingggg....</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+	<br>
+    <img src="./image/e3.jpg" style="width:70%">
+  <p><i>tomyamm is a life</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+	<br>
+    <img src="./image/e4.jpg" style="width:70%">
+  <p><i>I love you like a fat kid loves cake!</i> </p>
+  </div>
+  <div class="column" style="background-color:white; ">
+	<br>
+    <img src="./image/e2.jpg" style="width:70%">
+    <p><i>forever my fav lunch in kolej...</i></p>
+  </div>  
+</div>
+</div>
+<br>
+<br>
+<div class="footer">
+<h3 style="font-family:courier;"> My favorite drink...</h3>
+<div class="row">
+  <div class="column" style="background-color:white;">
+	<br>
+    <img src="./image/d1.jpg" style="width:70%">
+  <p><i>forever my fav green tea from starbucks</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+	<br>
+    <img src="./image/d2.jpg" style="width:70%">
+  <p><i>chill with boba milk </i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+	<br>
+    <img src="./image/d3.jpg" style="width:70%">
+  <p><i>Air nyiorrrr....</i> </p>
+  </div>
+  <div class="column" style="background-color:white; ">
+	<br>
+    <img src="./image/d4.jpg" style="width:70%">
+    <p><i>cendol would be my choice to drink while at pasar payang...</i></p>
+  </div>  
+</div>
+</div>
+<br>
+<br>
+<div class="footer"> 
+<h3 style="font-family:courier;"> My favorite song....</h3>
+<div class="row">
+  <div class="column" style="background-color:white;">
+    <img src="./image/song1.jpg" style="width:70%">
+  <p><i>sebenarnya diriku masih mengharapkan mu...</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./image/song2.jpg" style="width:70%">
+  <p><i>if you never know truth then you never know love</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <img src="./image/song3.jpg" style="width:70%">
+  <p><i>An empty street, an empty house, a hole inside my heart...</i> </p>
+  </div>
+  <div class="column" style="background-color:white; ">
+    <img src="./image/song4.jpg" style="width:70%">
+    <p><i>when my time comes, forget the wrong that I've done. Help me leave behind some reasons to be missed.</i></p>
+  </div>  
+</div>
+</div>
+<br>
+<br>
+<div class="footer"> 
+<h3 style="font-family:courier;"> My favorite moment....</h3>
+<div class="row">
+  <div class="column" style="background-color:white;">
+  <br>
+    <img src="./image/f1.jpg" style="width:70%">
+	 <p><i>my birthday celebration hik hik</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+   <br>
+    <img src="./image/f2.jpg" style="width:70%">
+	  <p><i>hari polis</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+   <br>
+    <img src="./image/f3.jpg" style="width:70%">
+	  <p><i>majlis berbuka puasa suksis</i> </p>
+  </div>
+  <div class="column" style="background-color:white; ">
+   <br>
+    <img src="./image/f4.jpg" style="width:70%">
+	    <p><i>we got second place during PERKAD!</i></p>
+  </div>  
+</div>
+</div>
+<br>
+<br>
+<div class="footer"> 
+<h3 style="font-family:courier;"> My favorite place....</h3>
+<div class="row">
+  <div class="column" style="background-color:white;">
+   <br>
+    <img src="./image/hatyai.jpg" style="width:70%">
+   <p><i>tomyam lee garden yummy yummy...</i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+   <br>
+    <img src="./image/kelantan.jpg" style="width:70%">
+  <p><i>negeri Cik Siti Wan Kembang... </i></p>
+  </div>
+  <div class="column" style="background-color:white;">
+   <br>
+    <img src="./image/krabi.jpg" style="width:70%">
+  <p><i>a place where you can find your happiness</i> </p>
+  </div>
+  <div class="column" style="background-color:white; ">
+   <br>
+    <img src="./image/penang.jpg" style="width:70%">
+    <p><i>pasemboq gurney wajib makan! hihi</i></p>
+  </div>  
+</div>
+</div>
+<br>
+<br>
+<div class="footer"> 
+<h3 style="font-family:courier;"> My favorite Skincare and Makeup Product....</h3>
+</div>
+<div class="footertable"> 
+<div class="w3-container">
+
+  <table class="w3-table-all w3-hoverable">
+    <thead>
+      <tr class="w3-black">
+        <th>Skincare</th>
+        <th>Makeup</th>
+      </tr>
+    </thead>
+    <tr>
+      <td> Fresh</td>
+      <td>Huda Beauty</td>
+    </tr>
+    <tr>
+      <td>Hada Labo</td>
+      <td>Maybelline</td>
+    </tr>
+    <tr>
+      <td>Ordinary</td>
+      <td>The Balm</td>
+    </tr>
+  </table>
+</div>
+</div>
+<br>
+<br>
+
+<div class="footer"> 
+<h3 style="font-family:courier;"> My favorite video....</h3>
+<video id="myVideo3"  width="400" controls>
+
+      <source src="./image/always.mp4" type="video/mp4">
+      <source src="./image/always.ogg" type="video/ogg">
+      Your browser does not support HTML5 video.
+</video>
+</div>
+<br>
+<br>
+<div class="footer"> 
+<h3 style="font-family:courier;"> My favorite kdrama....</h3>
+  <video id="myVideo2"  width="400" controls>
+
+      <source src="./image/king.mp4" type="video/mp4">
+      <source src="./image/king.ogg" type="video/ogg">
+      Your browser does not support HTML5 video.
+    </video>
+	<br>
+	<button onclick="playVid()" type="button">Play Video</button>
+	<button onclick="pauseVid()" type="button">Pause Video</button><br> 
+  <script> 
+var vid = document.getElementById("myVideo2"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script>
+</div>
+<br>
+<br>
+
+
+</body>
+</head>
